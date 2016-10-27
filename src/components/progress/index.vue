@@ -5,7 +5,7 @@
                  <div class="xcui-progress-inner" :style="{width:percent+'%',height:height+'px'}"></div>
             </div>
         </div>
-        <div :class="['infoClassName',!showInfo ? 'hidden':'']" >
+        <div :class="[infoClassName,!showInfo ? 'hidden':'']" >
             {{percentInfo}}
         </div>
     <div>
@@ -68,9 +68,6 @@
             display:inline-block;
         }
 
-        .shine span {
-          
-        }
         .xcui-progress-inner:after {
             content: "";
             opacity: 0;
